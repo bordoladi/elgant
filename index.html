@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Elgant Fashion</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">ELGANT FASHION</a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span class="material-icons">menu</span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#catalog">CATALOG</a></li>
+            <li><a href="#order">ORDER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" aria-label="Cari">
+                <span class="material-icons">search</span>
+            </button>
+        </div>
+    </nav>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active'); // Mengubah kelas aktif untuk menu
+        });
+    </script>
+	<section class="page1">
+		<div class="image-page1">
+			<div class="text-page1">
+				<a style="margin-left:70px;">ELGANT</a>
+				<a>FASHION</a>
+				<p>Our brand offers high quality clothing <br> with trendy and comfortable designs</p>
+			</div>
+			<div class="btn-page1">
+				<a href="#">Order Now</a>
+			</div>
+		</div>
+	</section>
+	<section class="page2">
+        <div class="image-page2">
+            <img src="page2.jpg" >
+			<img src="page20.jpg" >
+			<div class="text-page2">
+				<a>NEW COLLECTION</a>
+				<p>2024</p>
+			</div>
+        </div>
+    </section>
+</body>
+</html>
