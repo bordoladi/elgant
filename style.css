@@ -187,6 +187,46 @@ body {
 	margin : 0;
 }
 
+.page2-mbl {
+    display: none; 
+}
+
+.image-page2-mbl {
+    position: relative; 
+    flex: 1; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+	max-width: 100%; 
+    height: auto;
+}
+
+.image-page2-mbl img{
+	max-width: 100%; 
+    height: auto;
+	width: 49.5%; 
+}
+
+.text-page2-mbl {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+	text-align : center;
+}
+
+.text-page2-mbl a{
+    font-size: 50px;
+	font-weight : bold;
+	margin-bottom: 5px;
+	color : white;
+}
+
+.text-page2-mbl p{
+	font-weight : bold;
+	margin : 0;
+}
+
 
 /* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
@@ -228,7 +268,6 @@ body {
     }
 	.menu-toggle {
         display: block; /* Tampilkan tombol pada layar kecil */
-        margin-right : 20px;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -261,31 +300,72 @@ body {
 	}
 
 	.btn-page1 a {
-		
-	
 		font-size: 8px;
-	
-		
 	}
 	
 	.page2 {
-		margin : auto;
-        flex-direction: column; /* Mengubah tata letak menjadi kolom */
-		width : 95%;
+		display : none;
+    }
+	
+	.page2-mbl {
+        display: flex;
+        margin: auto;
+        width: 95%; 
+        flex-direction: column;
     }
 
-    .text-page2 a {
-        font-size: 24px; /* Ukuran font lebih kecil pada perangkat kecil */
+    .text-page2-mbl a {
+        font-size: 24px; 
     }
 
-    .text-page2 p {
-        font-size: 10px; /* Ukuran font lebih kecil pada perangkat kecil */
+    .text-page2-mbl p {
+        font-size: 14px; 
     }
 
-    .image-page2 {
-        width: 100%; /* Memastikan gambar mengambil lebar penuh */
-        margin: 10px 0; /* Jarak antara gambar pada perangkat kecil */
+    .image-page2-mbl {
+        width: 100%; 
+        margin: 10px 0; 
     }
+	
+	.image-page2-mbl img {
+		height : 400px;
+		object-fit: cover;
+	}
+	
+	.animated-text {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; 
+}
+
+	/* Keyframes untuk animasi */
+	@keyframes fadeIn {
+		0% {
+			opacity: 0; 
+		}
+		100% {
+			opacity: 1; 
+		}
+	}
+
+	/* Menambahkan delay untuk setiap huruf pada elemen dengan kelas .animated-text */
+	.animated-text:nth-child(1) { animation-delay: 0s; }
+	.animated-text:nth-child(2) { animation-delay: 0.4s; }
+
+	/* Efek animasi berulang */
+	@keyframes fadeInRepeat {
+		0%, 100% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+	}
+
+	/* Mengatur animasi untuk efek berulang */
+	.animated-text {
+		animation: fadeInRepeat 4s infinite; 
+	}
+	
 }
 
 
