@@ -169,6 +169,8 @@ body {
 	line-height: 1.4; /* Jarak antar baris */
 }
 
+
+/* page 2*/
 .page2 {
     display: flex; 
     margin: auto;
@@ -288,6 +290,251 @@ body {
 		animation: fadeInRepeat 4s infinite; 
 	}
 
+.text-swiper {
+	margin : auto;
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    padding-top: 100px; /* Padding for the container */
+	margin-bottom : -70px;
+	width : 70%;
+}
+
+.button {
+	font-size : 10px;
+    background-color: transparent; /* Transparent background */
+    color:black; /* Text color */
+    padding: 5px 15px; /* Padding for the button */
+    border: 2px solid gray; /* Border around the button */
+    border-radius: 50PX; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+	font-weight : Bold;
+}
+
+.button:hover {
+    background-color: gray; /* Background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+.text-swiper h2 {
+	font-size : 30px;
+}
+
+.container {
+	padding : 50px;
+    width: 80%; 
+    margin: auto;
+	text-align : Center;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.swiper {
+    width: 90%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+	position: relative;
+    width: 220px; /* Ubah lebar card sesuai kebutuhan */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: flex; /* Mengubah kartu menjadi flex container */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    align-items: center; /* Memusatkan konten secara horizontal */
+}
+
+.card img {
+    width: 200px; /* Gambar memenuhi lebar card */
+    height: 225px; /* Tinggi otomatis untuk menjaga aspek rasio */
+	object-fit : cover;
+}
+
+.card p { 
+	align-self: flex-start; 
+	color : black;
+	opacity : 0.7;
+	font-size : 11px;
+    margin-top: 5px; /* Jarak antara gambar dan teks */
+	margin-bottom : 5px;
+}
+
+.card a { 
+	align-self: flex-start; 
+	color : black;
+	font-weight : bold;
+	font-size : 11px;
+	letter-spacing : 1px;
+	display : block;
+}
+
+.color-circle {
+	align-self: flex-start; 
+	display: flex;
+}
+
+.clr {
+    width: 15px; /* Circle diameter */
+    height: 15px; /* Circle diameter */
+    border-radius: 50%; /* Make it a circle */
+	margin-top : 15px;
+	margin-right : 5px;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+.circle1-0 {
+    background-color: gray; 
+}
+.circle1-1 {
+    background-color: black; 
+}
+.circle2-0 {
+    background-color: gray; 
+}
+.circle2-1 {
+    background-color: black; 
+}
+.circle3-0 {
+    background-color: gray; 
+}
+.circle3-1 {
+    background-color: black; 
+}
+.circle4-0 {
+    background-color: gray; 
+}
+.circle4-1 {
+    background-color: black; 
+}
+.circle5-0 {
+    background-color: gray; 
+}
+.circle5-1 {
+    background-color: black; 
+}
+.circle6-0 {
+    background-color: gray; 
+}
+.circle6-1 {
+    background-color: black; 
+}
+
+.swiper-button-next,.swiper-button-prev {
+	font-size : 20px;
+	font-weight : bold;
+	color: gray;
+	position : flex;
+}
+.swiper-button-next {
+    margin-right: 12%; 
+}
+.swiper-button-prev {
+    margin-left: 12%; 
+}
+
+
+
+.footer-page {
+    display: flex;
+    align-items: center; 
+    margin: auto;
+    width: 100%;
+	padding-bottom : 20px;
+	padding-top : 20px;
+    position: relative;
+    margin-top: 30px;
+    height: 200px;
+	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+}
+
+.logo-footer {
+    margin-right: 50px; 
+}
+
+.logo-footer img {
+	margin-left : 60px;
+    height: 60px; 
+	padding : 70px;
+	
+}
+
+.menu-footer {
+	margin-top : 30px;
+	margin-left : 50px;
+	display: flex;
+    flex-direction: column; 
+}
+
+.menu-footer h5, .ecommerce-footer h5, .catalog-footer h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+}
+
+.menu-footer a, .list-ecommerce a, .catalog-footer a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5;/
+}
+.ecommerce-footer, .catalog-footer {
+	margin-top : 10px;
+	margin-left : 50px;
+	display: flex;
+    flex-direction: column; 
+}
+
+.menu-footer a:hover, .list-ecommerce a:hover , .catalog-footer a:hover{
+    color: gray; 
+}
+
+.catalog-footer a {
+	text-transform: uppercase; 
+}
+
+.footer-text a {
+	position: absolute; 
+	opacity : 0.5;
+    bottom: 20px; 
+    right: 20px; 
+	letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    position: absolute; /* Mengubah posisi menjadi absolute */
+    right: 70px;       /* Mengatur jarak dari kanan */
+    top: 60%;          /* Mengatur posisi vertikal */
+    transform: translateY(-50%); /* Memindahkan agar tepat di tengah */
+}
+
+.icon {
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: gray; 
+}
 
 /* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
@@ -364,6 +611,34 @@ body {
 		font-size: 8px;
 	}
 	
+	.about {
+	margin : auto;
+	width: 90%;
+	display: flex;
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    padding: 20px;
+	}
+
+	.about-text {
+		text-align: left; /* Teks rata kiri */
+		padding-top: 20px; 
+		padding-bottom: 20px;
+	}
+
+	.about-text a {
+		text-transform: uppercase;
+		font-weight : bold;
+		font-size : 20px;
+	}
+
+	.about-text p {
+		font-weight : bold;
+		font-size : 9px;
+		text-transform: uppercase;
+		word-spacing: 2px;
+		line-height: 1.4; /* Jarak antar baris */
+	}
+	
 	.page2 {
 		display : none;
     }
@@ -427,6 +702,95 @@ body {
 		animation: fadeInRepeat 4s infinite; 
 	}
 	
+	.text-swiper {
+    padding-top: 100px; /* Padding for the container */
+	margin-bottom : -50px;
+	width : 57%;
+	}
+
+	.button {
+		font-size : 7px;
+		padding: 3px 10px; 
+	}
+
+	.text-swiper h2 {
+		font-size : 20px;
+	}
+	
+	.container {
+		padding: 40px;
+		margin : auto;
+		flex-direction: column;
+        align-items: center; 
+	}
+	.card {
+        max-width: 100%;
+    }
+
+	.swiper {
+		max-width: 75%;
+	}
+	
+	.swiper-button-next {
+		margin-right: 12%; 
+	}
+	
+	.swiper-button-prev {
+		margin-left: 12%; 
+	}
+
+    .footer-page {
+		display: flex;
+		height : 230px; 
+		width : 100%;	
+
+	}
+
+	.logo-footer {
+		position : absolute;
+		top: -30px;
+		left: 15%; 
+		transform: translateX(-50%); 
+		margin-left : 0px;
+	}
+
+	.logo-footer img {
+		height: 30px; 
+		
+	}
+
+	.menu-footer {
+		margin-left : 30px;
+		margin-top :-10px;
+	}
+
+	.menu-footer h5, .ecommerce-footer h5, .catalog-footer h5 {
+		margin-top : 30px;
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+
+	.menu-footer a, .list-ecommerce a, .catalog-footer a {
+		font-size: 8px;
+	}
+	.ecommerce-footer, .catalog-footer {
+		margin-top : -22px;
+	}
+
+	.footer-text a {
+		font-size: 12px;
+	}
+
+	.social-media {
+		gap: 15px;
+		left: 30px;       
+		top:80%;          
+	}
+
+	.icon {
+		font-size: 12px;
+	}
+
 }
 
 

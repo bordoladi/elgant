@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Elgant Fashion</title>
+	<link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -69,13 +71,132 @@
     </section>
 	<section class="page2-mbl">
         <div class="image-page2-mbl">
-            <img src="page2-mbl.jpg" >
-			<img src="page20-mbl.jpg" >
+            <img src="2.jpg" >
+			<img src="5.jpg" >
 			<div class="text-page2-mbl">
 				<a class="animated-text">NEW COLLECTION</a>
 				<p class="animated-text">2024</p>
 			</div>
         </div>
     </section>
+	<div class="text-swiper">
+		<h2>CATALOG</h2>
+		<a href="#" class="button">More</a>
+	</div>
+	<section class="container">		
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage1" src="1.jpg" alt="Kemeja Wanita">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle1-0" onclick="changeImage1('1.jpg')"></a>
+							<a class="clr circle1-1" onclick="changeImage1('1blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage2" src="2.jpg" alt="Kemeja Pria">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle2-0" onclick="changeImage2('2.jpg')"></a>
+							<a class="clr circle2-1" onclick="changeImage2('2blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage3" src="3.jpg" alt="Dress">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle3-0" onclick="changeImage3('3.jpg')"></a>
+							<a class="clr circle3-1" onclick="changeImage3('3blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage4" src="4.jpg" alt="Jaket">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle4-0" onclick="changeImage4('4.jpg')"></a>
+							<a class="clr circle4-1" onclick="changeImage4('4blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage5" src="5.jpg" alt="Sepatu">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle5-0" onclick="changeImage5('5.jpg')"></a>
+							<a class="clr circle5-1" onclick="changeImage5('5blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img id="displayImage6" src="6.jpg" alt="Tas">
+                        <p>Kemeja Wanita</p>
+						<a>KEMEJA SALUR WANITA</a>
+						<div class="color-circle">
+							<a class="clr circle6-0" onclick="changeImage6('6.jpg')"></a>
+							<a class="clr circle6-1" onclick="changeImage6('6blck.jpg')"></a>
+						</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+		<!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </section>
+	<script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+	<script src="clr.shirt.js"></script>
+	<footer>
+        <div class="footer-page">
+            <div class="logo-footer">
+				<img src="logo.png">
+			</div>
+			<div class="menu-footer">
+				<h5>MENU</h5>
+				<a href="#">HOME</a>
+				<a href="#">CATALOG</a>
+				<a href="#">ORDER</a>
+				<a href="#">CONTACT</a>
+			</div>
+			<div class="ecommerce-footer">
+				<h5>ecommerce</h5>
+				<div class="list-ecommerce">
+					<a href="#">SHOPEE</a>
+					<a href="#">TIKTOK SHOP</a>
+					<a href="#">TOKOPEDIA</a>
+				</div>
+			</div>
+			<div class="catalog-footer">
+				<h5>catalog</h5>
+				<a href="#">Kemeja women</a>
+				<a href="#">blouse women</a>
+				<a href="#">stripe shirt</a>
+			</div>
+			<div class="footer-text">
+				<a >ELGANT FASHION 2024</a>
+			</div>
+			<div class="social-media">
+				<a href="mailto:example@example.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+				<a href="https://tiktok.com" target="_blank" class="icon"><i class="fab fa-tiktok"></i></a>
+				<a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+			</div>
+        </div>
+    </footer>
 </body>
 </html>
